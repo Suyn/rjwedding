@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+	<head>
+		<!--声明当前网页的编码集：中文编码（GBK/GB2312），国际编码（utf-8）--->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--声明当前页面的三要素-->
+		<title>个人中心</title>
+		<meta name="Keywords" content="关键词,关键词,关键词">
+		<meta name="description" content=""><!--描述信息（百度快照）八十个字以内-->
+		<!--css/js-->
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			a{text-decoration:none;}
+			/*body{background:url('/static/images/body_bg.jpg');font-size:12px;font-family:'微软雅黑';color:#666;}*/
+
+			/*timeline start*/
+			.timeline{margin:0 auto;position:relative;padding:63px 0 0 215px;}
+			.timeline .t_line{width:5px;height:1500px;background: hotpink;position:absolute;top:128px;left:254px;}
+			.timeline .t_send{width:760px;height:200px;margin:0 0 40px -24px;position:relative;}
+			.timeline .t_send .t_header img{border-radius:50%;overflow:hidden;-webkit-filter:brightness(0.8);}
+			.timeline .t_send .t_header:hover img{filter:blur(0.5);-webkit-filter:brightness(1);cursor:pointer;}
+			.timeline .t_send .t_header{float:left;}
+			.timeline .t_send .t_icon{width:13px;height:16px;background:url('/static/images/arrow.png')no-repeat;float:left;left:139px;top:56px;position:absolute;}
+			.timeline .t_send .box{border-radius:5px;width:600px;height:165px;background:white;float:right;margin-right:9px;}
+			.timeline .t_send .t_title{padding:12px 0px 10px 18px;font-size:14px;}
+			.timeline .t_send .box .t_input{width:560px;height:120px;border:0px;margin:0 auto;outline:none;padding:8px 0px;overflow:auto;}
+			.timeline .t_send .box .t_input img{margin:2px;vertical-align:middle;}
+			.timeline .t_send .box .t_face .t_gif{float:left;margin:6px 0px 0px 20px;}
+			.timeline .t_send .box .t_face .t_btn{display:block;float:right;width:80px;height:22px;text-align:center;line-height:22px;background:#FA0;color:white;font-weight:bold;border-radius:2px;margin:8px 19px 0 0;}
+			.timeline .t_send .box .t_face .t_btn:hover{background:#F90;}
+			.timeline .t_send .box .t_box{width:365px;height:180px;background:#fff;box-shadow:1px 1px 11px #000;border-radius:3px;position:absolute;bottom:-140px;left:170px;overflow:auto;display:none;z-index:1;}
+			.timeline .t_send .box .t_box ul li {list-style:none;display:inline-block;margin:2px 2px 2px 3px;cursor:pointer;}
+			.timeline .t_send .box .t_box ul{margin-left:8px;padding-top:6px;}
+
+			.timeline .t_all{position:relative;}
+			.timeline .t_all .t_list{margin:20px 0;}
+			.timeline .t_all .t_list .t_header{float:left;margin-left:10px;}
+			.timeline .t_all .t_list .t_header img{border-radius:50%}
+			.timeline .t_all .t_list .t_icon{width:13px;height:16px;background:url('/static/images/arrow.png')no-repeat;float:left;margin:20px -1px 0 10px;}
+			.timeline .t_all .t_msg{width:500px;background:#FFF;float:left;margin-top:2px;border-radius:5px;padding:20px;}
+			.timeline .t_all .t_msg img{vertical-align:middle;}
+			/*end timeline*/
+
+			.clear{clear:both;}
+			/*filter ie不兼容*/
+		</style>
+		<link rel="shortcut icon" href="{{ static_url('images/modify_center.ico') }}">
+		<link rel="stylesheet" href="{{ static_url('bless_circle/animate.css') }}"></link>
+	</head>
+<body>
+	<div id="users">
+		<p style="background-color: #b9baaf">&nbsp;&nbsp;<a href="/blessing_circle">返回祝福圈</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/">返回首页</a></p>
+	</div>
+	<!-- 留言列表 -->
+		<p style="background-color: #c0b86b;" class="system_all"></p>
+	<!-- 留言列表结束 -->
+
+
+	<!-- timeline start -->
+	<div class="timeline">
+		{% if len(cache) != 0 %}
+		<div class="t_line"></div>
+		{% end %}
+		<!-- 留言编辑框 -->
+		<div class="t_send">
+			<div class="t_header">
+				<img src="/static/images/user_avatar/{{current_user.avatar}}" alt="" width="128" height="128" />
+			</div>
+
+			<div class="box">
+				<p class="t_title" style="font-family: '黑体';font-size: 20px;">个人中心</p>
+				<!-- 消息输入框 -->
+				<div class="t_input">
+					<span style="font-family: '微软雅黑';font-size: 14px">昵称：{{ current_user.username }}</span><br />
+					<span style="font-family: '微软雅黑';font-size: 14px">邮箱：{{ current_user.email }}</span><br />
+					<span style="font-family: '微软雅黑';font-size: 14px">已发表祝福：{{ len(cache) }} 条</span><br />
+					<span id="modify_avatar" style="font-family: '微软雅黑';font-size: 14px">
+						<a id="modify_1" style="display: block;" href="javascript:void(0);">修改头像</a>
+						<span id="modify1" style="display: none;">
+							<form action="/modify_avatar" method="post" enctype="multipart/form-data">
+								{% module xsrf_form_html() %}
+								<input type="file" name="user_avatar" />
+								<input type="submit" value="上 传 头 像" />
+							</form>
+						</span>
+						<a id="modify_2" style="display: block;" href="javascript:void(0);">修改邮箱</a>
+						<span id="modify2" style="display: none;">
+							<form action="/modify_email" method="post" enctype="multipart/form-data">
+								{% module xsrf_form_html() %}
+								<input type="email" name="modify_email" />
+								<input type="submit" value="修 改 邮 箱" />
+							</form>
+						</span>
+					</span>
+				</div>
+				<!-- 消息输入框结束 -->
+
+				<!-- 表情 -->
+
+			</div>
+		</div>
+		<!-- 留言编辑框结束 -->
+		<!-- 留言列表 -->
+		<div class="t_all">
+			{% for ca in cache  %}
+				<div class='t_list animated bounceIn'>
+					<div class='t_header'>
+						<img src='/static/images/user_avatar/{{ ca['useravatar']}}' alt='' width='64' height='64' />
+					</div>
+					<div class='t_icon'></div>
+					<div class='t_msg'>
+						<p style='font-size:10px;'><a class="name" href="javascript:void(0);">{{ ca['name'] }}</a>&nbsp;
+							&nbsp;&nbsp;{{ ca['datetime'] }}</p>{% raw ca['content_html'] %}<p><a href="/modify_content_delete?current_content_id={{ ca['content_user_id'] }}" style="font-size: 14px;">删除</a></p>
+					</div>
+					<div class='clear'></div>
+				</div>
+			{% end %}</div>
+		<!-- 留言列表结束 -->
+	</div>
+	<!-- end timeline -->
+
+	<!-- 引用jQuery官方类库 -->
+	<script type="text/javascript" src="{{static_url('bless_circle/jquery-2.2.0.min.js')}}"></script>
+	<script src="{{static_url('bless_circle/jquery.backstretch.min.js')}}"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $.backstretch("/static/images/body_bg.jpg");
+        });
+    </script>
+	<script type="text/javascript">
+		var data_a = document.getElementById('modify_1');
+		var data_span_1 = document.getElementById('modify1');
+		var data_b = document.getElementById('modify_2');
+		var data_span_2 = document.getElementById('modify2');
+		data_a.onclick = function(){
+			data_span_1.style.display = "block";
+			data_a.style.display = "none";
+			data_span_2.style.display = "none";
+			data_b.style.display = "block";
+		}
+		data_b.onclick = function(){
+			data_span_2.style.display = "block";
+			data_b.style.display = "none";
+			data_span_1.style.display = "none";
+			data_a.style.display = "block";
+		}
+	</script>
+</body>
+</html>

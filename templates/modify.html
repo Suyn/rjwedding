@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+</head>
+<p>
+{% if not current_user %}
+<div>
+    <span>您还未<a href="/login">登录</a></span>
+</div>
+{% else %}
+<div>
+    <p>昵称：{{ current_user.username }}</p>
+    <p>邮箱：{{ current_user.email }}</p>
+    我的头像：<br /><img src="../static/images/user_avatar/{{ default_avatar }}" style="height: 100px; weight: 160px;"/><br />
+<form action="/modify_avatar" method="post" enctype="multipart/form-data">
+    {% module xsrf_form_html() %}
+    <input type="file" name="user_avatar" /><br />
+    <input type="submit" value="上 传 头 像" />
+</form>
+</div>
+{% end %}
+</body>
+</html>

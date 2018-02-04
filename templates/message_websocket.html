@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+	<head>
+		<!--声明当前网页的编码集：中文编码（GBK/GB2312），国际编码（utf-8）--->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--声明当前页面的三要素-->
+		<title>祝福圈</title>
+		<meta name="Keywords" content="关键词,关键词,关键词">
+		<meta name="description" content=""><!--描述信息（百度快照）八十个字以内-->
+		<!--css/js-->
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			a{text-decoration:none;}
+			/*body{background:url('/static/images/body_bg.jpg');font-size:12px;font-family:'微软雅黑';color:#666;}*/
+
+			/*timeline start*/
+			.timeline{margin:0 auto;position:relative;padding:63px 0 0 215px;}
+			.timeline .t_line{width:5px;height:1500px;background:cornflowerblue;position:absolute;top:128px;left:254px;}
+			.timeline .t_send{width:760px;height:200px;margin:0 0 40px -24px;position:relative;}
+			.timeline .t_send .t_header img{border-radius:50%;overflow:hidden;-webkit-filter:brightness(0.8);}
+			.timeline .t_send .t_header:hover img{filter:blur(0.5);-webkit-filter:brightness(1);cursor:pointer;}
+			.timeline .t_send .t_header{float:left;}
+			.timeline .t_send .t_icon{width:13px;height:16px;background:url('/static/images/arrow.png')no-repeat;float:left;left:139px;top:56px;position:absolute;}
+			.timeline .t_send .box{border-radius:5px;width:600px;height:165px;background:white;float:right;margin-right:9px;}
+			.timeline .t_send .t_title{padding:12px 0px 10px 18px;font-size:14px;}
+			.timeline .t_send .box .t_input{width:560px;height:70px;border:1px solid #e5e5e5;margin:0 auto;outline:none;padding:8px 0px;overflow:auto;-webkit-user-modify: read-write-plaintext-only;}
+			.timeline .t_send .box .t_input img{margin:2px;vertical-align:middle;}
+			.timeline .t_send .box .t_face .t_gif{float:left;margin:6px 0px 0px 20px;}
+			.timeline .t_send .box .t_face .t_btn{display:block;float:right;width:80px;height:22px;text-align:center;line-height:22px;background:#FA0;color:white;font-weight:bold;border-radius:2px;margin:8px 19px 0 0;}
+			.timeline .t_send .box .t_face .t_btn:hover{background:#F90;}
+			.timeline .t_send .box .t_box{width:365px;height:180px;background:#fff;box-shadow:1px 1px 11px #000;border-radius:3px;position:absolute;bottom:-140px;left:170px;overflow:auto;display:none;z-index:1;}
+			.timeline .t_send .box .t_box ul li {list-style:none;display:inline-block;margin:2px 2px 2px 3px;cursor:pointer;}
+			.timeline .t_send .box .t_box ul{margin-left:8px;padding-top:6px;}
+
+			.timeline .t_all{position:relative;}
+			.timeline .t_all .t_list{margin:20px 0;}
+			.timeline .t_all .t_list .t_header{float:left;margin-left:10px;}
+			.timeline .t_all .t_list .t_header img{border-radius:50%}
+			.timeline .t_all .t_list .t_icon{width:13px;height:16px;background:url('/static/images/arrow.png')no-repeat;float:left;margin:20px -1px 0 10px;}
+			.timeline .t_all .t_msg{width:500px;background:#FFF;float:left;margin-top:2px;border-radius:5px;padding:20px;}
+			.timeline .t_all .t_msg img{vertical-align:middle;}
+			/*end timeline*/
+
+			.clear{clear:both;}
+			/*filter ie不兼容*/
+		</style>
+		<link rel="shortcut icon" href="{{ static_url('images/blessing_circle.ico') }}">
+		<link rel="stylesheet" href="{{ static_url('bless_circle/animate.css') }}"></link>
+	</head>
+<body>
+	<!--用户列表-->
+	<div id="users">
+		<p style="background-color: #b9baaf">欢迎您，{{current_user.username}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="status" href="javascript:void(0);"></a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/modify_center_1">返回个人中心</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/">返回首页</a></p>
+	</div>
+	<!-- 留言列表 -->
+		<p style="background-color: #c0b86b;" class="system_all"></p>
+	<!-- 留言列表结束 -->
+
+
+	<!-- timeline start -->
+	<div class="timeline">
+		<div class="t_line"></div>
+		<!-- 留言编辑框 -->
+		<div class="t_send">
+			<div class="t_header">
+				<img src="/static/images/user_avatar/{{current_user.avatar}}" alt="" width="128" height="128" />
+			</div>
+			<div class="t_icon"></div>
+			<div class="box">
+				<p class="t_title">您发表的祝福将会展示在“祝福墙”上
+
+
+                </p>
+
+				<!-- 消息输入框 -->
+				<div class="t_input" onKeyUp="cal_words()" contenteditable="true" maxlength="2"></div>
+				<!-- 消息输入框结束 -->
+
+				<!-- 表情 -->
+				<p class="t_face">
+					<a href="javascript:void(0);" class="t_gif">
+						<!--<img src="/static/images/face.gif" alt="" width="22" height="22" />-->
+						祝福内容需在(<span id="num" style="color: blue;">0</span>/64)个字内，超过无效，所以换行是不存在的哦~
+					</a>
+					<a href="javascript:void(0);" class="t_btn">发&nbsp;&nbsp;&nbsp;表</a>
+				</p>
+				<script>
+					function cal_words(){
+						var length = ($('.t_input').html()).length;
+						if (length > 64){
+							document.getElementById("num").style.color = 'red';
+						}
+						else {
+							document.getElementById("num").style.color = 'blue';
+						}
+						document.getElementById("num").innerHTML = length;
+					}
+				</script>
+			</div>
+		</div>
+		<!-- 留言编辑框结束 -->
+		<!-- 留言列表 -->
+		<div class="t_all">
+			{% for ca in cache  %}
+				<div class='t_list animated bounceIn'>
+					<div class='t_header'>
+						<img src='/static/images/user_avatar/{{ ca['useravatar']}}' alt='' width='64' height='64' />
+					</div>
+					<div class='t_icon'></div>
+					<div class='t_msg'>
+						<p style='font-size:8px;'><a class="name" href="#">{{ ca['name'] }}</a>&nbsp;&nbsp;&nbsp;{{ ca['datetime'] }}</p>{% raw ca['content_html'] %}
+					</div>
+					<div class='clear'></div>
+				</div>
+			{% end %}</div>
+		<!-- 留言列表结束 -->
+	</div>
+	<!-- end timeline -->
+
+	<!-- 引用jQuery官方类库 -->
+	<script type="text/javascript" src="{{static_url('bless_circle/jquery-2.2.0.min.js')}}"></script>
+	<script src="{{static_url('bless_circle/jquery.backstretch.min.js')}}"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $.backstretch("/static/images/personal_bg.jpg");
+        });
+    </script>
+
+	<script type="text/javascript">
+        $(document).ready(function(){
+                //与服务器建立websocket链接请求
+                var url="ws://" + location.host + "/send_blessing";
+                var ws= new WebSocket(url);//在浏览器打开一个socket  服务器打开一个socket
+
+                ws.onopen=function(){
+					$('#status').text('已连接到祝福墙')
+                };
+
+                ws.onclose=function () {
+					$('#status').text('已断开连接')
+                };
+
+                //当收到服务器向浏览器推送消息时调用这个函数
+                ws.onmessage=function(event){
+
+					message = JSON.parse(event.data);
+                  if(message.content_html){
+                      append(message);
+				  }else{
+					  append_m(message);
+                  }
+                };
+
+
+			    // 点击发布按钮时调用wsbsocket.send（）函数向服务器发送数据
+                $(".t_btn").click(function(){
+                    var content_html = $('.t_input').html();
+                    console.log(content_html);
+                    var massage = {
+                        "content_html":content_html
+                    };
+                    ws.send(JSON.stringify(massage));
+
+                });
+
+				// 动态添加发布消息的函数
+				function append(msg){
+				    //向留言中添加消息
+					$(".t_all").prepend(function(n){
+						var content_html='';
+						var useravatar='';
+						var datetime1='';
+						if(msg){
+							content_html = msg.content_html;
+							useravatar = msg.useravatar;
+							datetime1 = msg.datetime;
+						}
+						return "<div class='t_list animated bounceIn'>"+
+									"<div class='t_header'>"+
+										"<img src='/static/images/user_avatar/" + useravatar +"' alt='' width='64' height='64' />"+
+									"</div>"+
+									"<div class='t_icon'></div>"+
+									"<div class='t_msg'>"+"<p style='font-size:8px;'>"+
+									"<a class='name' href='#'>" +msg.name+ "&nbsp;&nbsp;&nbsp;</a>"+
+										datetime1+"</p>"+content_html+"</div>"+
+									"<div class='clear'></div>"+
+								"</div>"
+						});
+					$('.t_box').hide(400);
+					$('.t_input').text('');
+					$('.t_input').focus();
+				}
+
+
+				// 发布系统消息的函数
+				function append_m(msg){
+					$(".system_all").html('');
+					var target = "";
+					if(msg.target == "system"){
+						target = "全体人员"
+					}else{
+					    target = msg.target
+					}
+					var messages = "消息内容:"+msg.content+
+						"&nbsp;&nbsp;&nbsp;消息类型："+
+						msg.send_type+"&nbsp;&nbsp;&nbsp;发送者："+
+						msg.sender +"&nbsp;&nbsp;&nbsp;接收者："+
+						target+"&nbsp;&nbsp;&nbsp;时间："+
+						msg.datetime;
+					$(".system_all").html(messages);
+				}
+        })
+
+	</script>
+</body>
+</html>
