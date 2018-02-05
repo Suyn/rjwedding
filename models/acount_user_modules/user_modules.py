@@ -2,7 +2,7 @@ from datetime import datetime
 from string import printable
 from pbkdf2 import PBKDF2
 from sqlalchemy import Column, Integer, String, DateTime, Boolean
-import time
+from libs.China_time.beijing_time import beijing_time
 from libs.db.connect import Base, session
 
 
@@ -15,7 +15,7 @@ class User(Base):
 
     email = Column(String(40))
     password = Column(String(100))
-    creattime = Column(DateTime, default=time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()+46800)))
+    creattime = Column(DateTime, default=beijing_time)
     last_login = Column(DateTime, default=None)
     login_num = Column(Integer, default=0)
     mobile = Column(String(50))

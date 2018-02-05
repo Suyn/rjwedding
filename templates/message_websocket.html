@@ -132,7 +132,7 @@
         $(document).ready(function(){
                 //与服务器建立websocket链接请求
                 var url="ws://" + location.host + "/send_blessing";
-                var ws= new WebSocket(url);//在浏览器打开一个socket  服务器打开一个socket
+                var ws= new WebSocket(url);
 
                 ws.onopen=function(){
 					$('#status').text('已连接到祝福墙')

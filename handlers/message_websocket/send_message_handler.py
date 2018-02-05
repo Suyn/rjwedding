@@ -26,7 +26,7 @@ class SendBlessingHandler(BaseWebSocketHandler):
     users = {}# {'zhangsan': MessageWebSocket(), 'lishi': MessageWebSocket()}
 
     @classmethod
-    def send_system_message(cls,self ,content,send_type):
+    def send_system_message(cls, self, content, send_type):
         target = 'system'
         redis_msg = cls.dict_to_json(self, content, send_type, target)
         self.conn.rpush('message:%s'%send_type,redis_msg)
@@ -70,8 +70,8 @@ class SendBlessingHandler(BaseWebSocketHandler):
 
     def on_message(self, message):
         print '---------------on_message------------------'
-        print message
         msg = tornado.escape.json_decode(message)
+        print msg
         if msg['content_html'] == '' or len(msg['content_html']) > 65:
             return
         if '\n' in msg['content_html']:
@@ -89,10 +89,6 @@ class SendBlessingHandler(BaseWebSocketHandler):
             blessing = Danmu(username=self.current_user, contents=msg['content_html'])
             self.db.add(blessing)
             self.db.commit()
-            # message = tornado.escape.json_encode(msg)
-            #
-            # self.conn.rpush('message:list', message)
-            #
             for f, v in SendBlessingHandler.users.iteritems():
                 v.write_message(msg)
 

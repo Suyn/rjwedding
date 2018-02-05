@@ -1,5 +1,4 @@
-from datetime import datetime
-import time
+from libs.China_time.beijing_time import beijing_time
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Text
 from sqlalchemy.orm import relationship
 
@@ -12,7 +11,7 @@ class Danmu(Base):
 
     username = Column(String(25), nullable=False, unique=False)
 
-    creattime = Column(DateTime, default=time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()+46800)))
+    creattime = Column(DateTime, default=beijing_time)
 
     contents = Column(Text, nullable=False)
 

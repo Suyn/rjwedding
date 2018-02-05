@@ -12,5 +12,10 @@ class Error_404_Handler(BaseHandler):
         else:
             self.write('error:' + str(status_code))
 
-error_404_handler = [(r'.*', Error_404_Handler)]
+
+class Error404(BaseHandler):
+    def get(self):
+        return self.render('404.html')
+error_404_handler = [(r'/404', Error404),
+                     (r'.*', Error_404_Handler)]
 error_other_handler = [(r'.*\..*', Error_404_Handler)]
