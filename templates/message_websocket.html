@@ -50,7 +50,7 @@
 <body>
 	<!--用户列表-->
 	<div id="users">
-		<p style="background-color: #b9baaf">欢迎您，{{current_user.username}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="status" href="javascript:void(0);"></a>
+		<p style="background-color: #b9baaf">欢迎您，{{current_user.username}}
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/modify_center_1">返回个人中心</a>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/">返回首页</a></p>
 	</div>
@@ -70,8 +70,7 @@
 			<div class="t_icon"></div>
 			<div class="box">
 				<p class="t_title">您发表的祝福将会展示在“祝福墙”上
-
-
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="status" href="javascript:void(0);"></a>
                 </p>
 
 				<!-- 消息输入框 -->
@@ -139,7 +138,7 @@
                 };
 
                 ws.onclose=function () {
-					$('#status').text('已断开连接')
+					$('#status').text('已断开连接,请刷新页面重新连接')
                 };
 
                 //当收到服务器向浏览器推送消息时调用这个函数
