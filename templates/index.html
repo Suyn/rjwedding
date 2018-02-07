@@ -264,8 +264,7 @@
 			<div class="row">
 				<div class="display-t">
 					<div class="display-tc">
-						{% if username=='边里玩' %}
-						<div class="col-md-3 col-sm-6 animate-box">
+						<div class="col-md-3 col-sm-6 animate-box" {% if username！='边里玩' %}hidden{% end %}>
 							<div class="feature-center">
 								<span class="icon">
 									<i class="icon-users"></i>
@@ -279,23 +278,12 @@
 						<div class="col-md-3 col-sm-6 animate-box">
 							<div class="feature-center">
 								<span class="icon">
-									<i class="icon-user"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="{{ date_regist }}" data-speed="6000" data-refresh-interval="50">1</span>
-								<span class="counter-label">今日注册人员 &nbsp;/个</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
 									<i class="icon-calendar"></i>
 								</span>
 								<span class="counter js-counter" data-from="0" data-to="{{ congratulations }}" data-speed="6000" data-refresh-interval="50">1</span>
 								<span class="counter-label">已有祝福语 &nbsp;/条</span>
 							</div>
 						</div>
-						{% end %}
 						<div class="col-md-3 col-sm-6 animate-box">
 							<div class="feature-center">
 								<span class="icon">
@@ -305,6 +293,16 @@
 								<span class="counter js-counter" data-from="0" data-to="10000" data-speed="6000" data-refresh-interval="50">1</span>
 								<span class="counter-label">如果非要在这份爱上加上一个期限，我希望是 &nbsp;/年</span>
 
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box" {% if username！='边里玩' %}hidden{% end %}>
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-user"></i>
+								</span>
+
+								<span class="counter js-counter" data-from="0" data-to="{{ date_regist }}" data-speed="6000" data-refresh-interval="50">1</span>
+								<span class="counter-label">今日注册人员 &nbsp;/个</span>
 							</div>
 						</div>
 					</div>
