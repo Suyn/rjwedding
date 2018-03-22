@@ -22,7 +22,7 @@ class IndexHandler(BaseHandler):
             c = create_time.creattime.strftime('%Y-%m-%d')
             if c == date_data:
                 date_regist += 1
-        print "current_user:"+self.current_user
+        # print "current_user:"+self.current_user
         # --------------
         three_list = []
         three_contents = Danmu.get_all()[-3:]

@@ -5,7 +5,7 @@ from libs.danmu.index_danmu_lib import danmu_lists
 settings = dict(
     login_url='/auth/login',
     cookie_secret='abcdefghijklmnopqrstuvwxyz',
-    debug=True,
+    # debug=True,
     template_path='templates',
     static_path='static',
     xsrf_cookies=True,
