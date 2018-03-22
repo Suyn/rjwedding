@@ -1,0 +1,6 @@
+2018-03-22 22:27:05,349 INFO daemonizing the supervisord process
+2018-03-22 22:27:05,349 INFO supervisord started with pid 5244
+2018-03-22 22:27:06,352 INFO spawned: 'tornado-send-email' with pid 5245
+2018-03-22 22:27:06,356 INFO spawned: 'tornado-9000' with pid 5246
+2018-03-22 22:27:07,365 INFO success: tornado-send-email entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-03-22 22:27:07,365 INFO success: tornado-9000 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

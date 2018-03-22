@@ -1,0 +1,187 @@
+[2018-03-22 22:27:07,969: INFO/Beat] beat: Starting...
+[2018-03-22 22:27:08,004: INFO/MainProcess] Connected to redis://127.0.0.1:6379/2
+[2018-03-22 22:27:08,166: INFO/MainProcess] mingle: searching for neighbors
+[2018-03-22 22:27:08,383: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:27:09,189: INFO/MainProcess] mingle: all alone
+[2018-03-22 22:27:09,210: INFO/MainProcess] celery@suyn-VM-Ubuntu ready.
+[2018-03-22 22:27:09,372: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[3965ba82-4cc3-44ad-a124-1312b959d4a7]  
+[2018-03-22 22:27:09,413: WARNING/ForkPoolWorker-2] []
+[2018-03-22 22:27:09,424: INFO/ForkPoolWorker-2] Task celery_module.celery_tasks.manage_redis[3965ba82-4cc3-44ad-a124-1312b959d4a7] succeeded in 0.0508560870003s: None
+[2018-03-22 22:27:13,363: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:27:13,366: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[cd549d03-b373-4f88-bac7-0519f40fdae6]  
+[2018-03-22 22:27:13,397: WARNING/ForkPoolWorker-6] []
+[2018-03-22 22:27:13,406: INFO/ForkPoolWorker-6] Task celery_module.celery_tasks.manage_redis[cd549d03-b373-4f88-bac7-0519f40fdae6] succeeded in 0.0352767349978s: None
+[2018-03-22 22:27:18,364: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:27:18,372: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[873350bd-d56e-4b76-a0a7-08789eaf26fd]  
+[2018-03-22 22:27:18,383: WARNING/ForkPoolWorker-3] []
+[2018-03-22 22:27:18,408: INFO/ForkPoolWorker-3] Task celery_module.celery_tasks.manage_redis[873350bd-d56e-4b76-a0a7-08789eaf26fd] succeeded in 0.03463233s: None
+[2018-03-22 22:27:23,364: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:27:23,367: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[26811dea-410b-4595-8fda-ba13ecd920ce]  
+[2018-03-22 22:27:23,372: WARNING/ForkPoolWorker-4] []
+[2018-03-22 22:27:23,384: INFO/ForkPoolWorker-4] Task celery_module.celery_tasks.manage_redis[26811dea-410b-4595-8fda-ba13ecd920ce] succeeded in 0.0139530060005s: None
+[2018-03-22 22:27:28,364: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:27:28,366: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[d91fe51f-85b4-44e5-b84c-90ba85c90be5]  
+[2018-03-22 22:27:28,375: WARNING/ForkPoolWorker-5] []
+[2018-03-22 22:27:28,382: INFO/ForkPoolWorker-5] Task celery_module.celery_tasks.manage_redis[d91fe51f-85b4-44e5-b84c-90ba85c90be5] succeeded in 0.0142176189984s: None
+[2018-03-22 22:27:33,364: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:27:33,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[162e20bd-dc8a-412a-b3ee-6443fb3bba8f]  
+[2018-03-22 22:27:33,370: WARNING/ForkPoolWorker-2] []
+[2018-03-22 22:27:33,372: INFO/ForkPoolWorker-2] Task celery_module.celery_tasks.manage_redis[162e20bd-dc8a-412a-b3ee-6443fb3bba8f] succeeded in 0.00178918000165s: None
+[2018-03-22 22:27:38,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:27:38,369: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[320f63f0-0245-442e-8924-29e7b17fadf6]  
+[2018-03-22 22:27:38,371: WARNING/ForkPoolWorker-6] []
+[2018-03-22 22:27:38,372: INFO/ForkPoolWorker-6] Task celery_module.celery_tasks.manage_redis[320f63f0-0245-442e-8924-29e7b17fadf6] succeeded in 0.00140781099981s: None
+[2018-03-22 22:27:43,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:27:43,369: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[4d1829de-0b96-49c2-8533-e6baebe64851]  
+[2018-03-22 22:27:43,371: WARNING/ForkPoolWorker-3] []
+[2018-03-22 22:27:43,372: INFO/ForkPoolWorker-3] Task celery_module.celery_tasks.manage_redis[4d1829de-0b96-49c2-8533-e6baebe64851] succeeded in 0.00149915699876s: None
+[2018-03-22 22:27:48,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:27:48,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[ec547f5d-8ac3-4be0-bb6c-c30da57d5288]  
+[2018-03-22 22:27:48,369: WARNING/ForkPoolWorker-4] []
+[2018-03-22 22:27:48,370: INFO/ForkPoolWorker-4] Task celery_module.celery_tasks.manage_redis[ec547f5d-8ac3-4be0-bb6c-c30da57d5288] succeeded in 0.000973097001406s: None
+[2018-03-22 22:27:53,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:27:53,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[177d60ee-210f-447c-9a7e-6772faba5db5]  
+[2018-03-22 22:27:53,370: WARNING/ForkPoolWorker-5] ['regist_email:594154545@qq.com']
+[2018-03-22 22:27:53,371: WARNING/ForkPoolWorker-5] {"username": "suyn", "password": "123456", "email": "594154545@qq.com", "email_code": "613337", "IsSendEmail": false}
+[2018-03-22 22:27:53,371: WARNING/ForkPoolWorker-5] 613337
+[2018-03-22 22:27:55,395: WARNING/ForkPoolWorker-5] Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Subject: 注册--邮箱验证
+From: wedding@wulilove.cn
+To: 594154545@qq.com
+
+CiAgICAgICAgICAgICAgICDmgqjlpb3vvIw8YSBocmVmPSJodHRwOi8vd3VsaWxvdmUuY24iPld1
+TGlsb3ZlPC9hPuaPkOmGkuaCqO+8jOaCqOeahOmqjOivgeeggeS4ujxzcGFuIHN0eWxlPSJjb2xv
+cjogYmx1ZSI+NjEzMzM3PC9zcGFuPizmnInmlYjml7bpl7TkuLozMOWIhumSn++8jOiLpemdnuaC
+qOacrOS6uuaJgOS4uuivt+W/veeVpeatpOmCruS7tuOAggogICAgICAgICAgICAgICAg
+[2018-03-22 22:27:55,470: WARNING/ForkPoolWorker-5] 发送成功
+[2018-03-22 22:27:55,471: INFO/ForkPoolWorker-5] Task celery_module.celery_tasks.manage_redis[177d60ee-210f-447c-9a7e-6772faba5db5] succeeded in 2.101280039s: None
+[2018-03-22 22:27:58,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:27:58,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[d9c7cfc5-9f4a-4c2c-b5a9-34d22fe3232d]  
+[2018-03-22 22:27:58,369: WARNING/ForkPoolWorker-2] ['regist_email:594154545@qq.com']
+[2018-03-22 22:27:58,370: WARNING/ForkPoolWorker-2] {"username": "suyn", "password": "123456", "email": "594154545@qq.com", "email_code": "613337", "IsSendEmail": true}
+[2018-03-22 22:27:58,371: INFO/ForkPoolWorker-2] Task celery_module.celery_tasks.manage_redis[d9c7cfc5-9f4a-4c2c-b5a9-34d22fe3232d] succeeded in 0.00145453200093s: None
+[2018-03-22 22:28:03,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:28:03,371: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[af65a494-2b45-4913-867a-13ab745d2581]  
+[2018-03-22 22:28:03,389: WARNING/ForkPoolWorker-6] ['regist_email:594154545@qq.com']
+[2018-03-22 22:28:03,390: WARNING/ForkPoolWorker-6] {"username": "suyn", "password": "123456", "email": "594154545@qq.com", "email_code": "613337", "IsSendEmail": true}
+[2018-03-22 22:28:03,392: INFO/ForkPoolWorker-6] Task celery_module.celery_tasks.manage_redis[af65a494-2b45-4913-867a-13ab745d2581] succeeded in 0.00397897799849s: None
+[2018-03-22 22:28:08,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:28:08,369: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[268a47f2-bd40-435c-9ea8-44fd1c01142a]  
+[2018-03-22 22:28:08,370: WARNING/ForkPoolWorker-3] ['regist_email:594154545@qq.com']
+[2018-03-22 22:28:08,371: WARNING/ForkPoolWorker-3] {"username": "suyn", "password": "123456", "email": "594154545@qq.com", "email_code": "613337", "IsSendEmail": true}
+[2018-03-22 22:28:08,372: INFO/ForkPoolWorker-3] Task celery_module.celery_tasks.manage_redis[268a47f2-bd40-435c-9ea8-44fd1c01142a] succeeded in 0.00129343699882s: None
+[2018-03-22 22:28:13,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:28:13,369: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[8f12ded3-4516-43b8-920e-008a4c39ae83]  
+[2018-03-22 22:28:13,371: WARNING/ForkPoolWorker-4] ['regist_email:594154545@qq.com']
+[2018-03-22 22:28:13,371: WARNING/ForkPoolWorker-4] {"username": "suyn", "password": "123456", "email": "594154545@qq.com", "email_code": "613337", "IsSendEmail": true}
+[2018-03-22 22:28:13,372: INFO/ForkPoolWorker-4] Task celery_module.celery_tasks.manage_redis[8f12ded3-4516-43b8-920e-008a4c39ae83] succeeded in 0.00130668699785s: None
+[2018-03-22 22:28:18,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:28:18,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[a193bcfc-9342-46c7-b099-c27212ac5065]  
+[2018-03-22 22:28:18,371: WARNING/ForkPoolWorker-5] []
+[2018-03-22 22:28:18,374: INFO/ForkPoolWorker-5] Task celery_module.celery_tasks.manage_redis[a193bcfc-9342-46c7-b099-c27212ac5065] succeeded in 0.00348262699845s: None
+[2018-03-22 22:28:23,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:28:23,369: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[c1579aa5-8e76-4077-9f78-e97aa751616d]  
+[2018-03-22 22:28:23,371: WARNING/ForkPoolWorker-2] []
+[2018-03-22 22:28:23,372: INFO/ForkPoolWorker-2] Task celery_module.celery_tasks.manage_redis[c1579aa5-8e76-4077-9f78-e97aa751616d] succeeded in 0.00104448300044s: None
+[2018-03-22 22:28:28,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:28:28,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[762742c1-8265-4aa0-a40d-ad6ee0527bff]  
+[2018-03-22 22:28:28,370: WARNING/ForkPoolWorker-6] []
+[2018-03-22 22:28:28,370: INFO/ForkPoolWorker-6] Task celery_module.celery_tasks.manage_redis[762742c1-8265-4aa0-a40d-ad6ee0527bff] succeeded in 0.00103159900027s: None
+[2018-03-22 22:28:33,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:28:33,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[26e5c014-1b73-4cd2-9d96-fa8b9601fb7f]  
+[2018-03-22 22:28:33,371: WARNING/ForkPoolWorker-3] []
+[2018-03-22 22:28:33,372: INFO/ForkPoolWorker-3] Task celery_module.celery_tasks.manage_redis[26e5c014-1b73-4cd2-9d96-fa8b9601fb7f] succeeded in 0.00112571700083s: None
+[2018-03-22 22:28:38,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:28:38,369: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[664ad5b6-2990-4c65-a5cc-0768f26c28c9]  
+[2018-03-22 22:28:38,370: WARNING/ForkPoolWorker-4] []
+[2018-03-22 22:28:38,372: INFO/ForkPoolWorker-4] Task celery_module.celery_tasks.manage_redis[664ad5b6-2990-4c65-a5cc-0768f26c28c9] succeeded in 0.00229104800019s: None
+[2018-03-22 22:28:43,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:28:43,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[21618073-bf54-40db-8d92-70ac551ff610]  
+[2018-03-22 22:28:43,370: WARNING/ForkPoolWorker-5] []
+[2018-03-22 22:28:43,370: INFO/ForkPoolWorker-5] Task celery_module.celery_tasks.manage_redis[21618073-bf54-40db-8d92-70ac551ff610] succeeded in 0.000924785999814s: None
+[2018-03-22 22:28:48,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:28:48,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[490a9383-051b-46ec-962f-265c420342e6]  
+[2018-03-22 22:28:48,369: WARNING/ForkPoolWorker-2] []
+[2018-03-22 22:28:48,370: INFO/ForkPoolWorker-2] Task celery_module.celery_tasks.manage_redis[490a9383-051b-46ec-962f-265c420342e6] succeeded in 0.00126357000045s: None
+[2018-03-22 22:28:53,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:28:53,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[ff9fab5d-87fe-4199-a0fa-696bbc441cc9]  
+[2018-03-22 22:28:53,370: WARNING/ForkPoolWorker-6] []
+[2018-03-22 22:28:53,371: INFO/ForkPoolWorker-6] Task celery_module.celery_tasks.manage_redis[ff9fab5d-87fe-4199-a0fa-696bbc441cc9] succeeded in 0.00155477500084s: None
+[2018-03-22 22:28:58,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:28:58,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[97b8c6ac-b800-420a-833b-eaf9c6d52c8d]  
+[2018-03-22 22:28:58,370: WARNING/ForkPoolWorker-3] []
+[2018-03-22 22:28:58,370: INFO/ForkPoolWorker-3] Task celery_module.celery_tasks.manage_redis[97b8c6ac-b800-420a-833b-eaf9c6d52c8d] succeeded in 0.00102220400004s: None
+[2018-03-22 22:29:03,365: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:29:03,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[b76b1ee7-8f10-41c2-aa2a-9acc78446454]  
+[2018-03-22 22:29:03,369: WARNING/ForkPoolWorker-4] []
+[2018-03-22 22:29:03,371: INFO/ForkPoolWorker-4] Task celery_module.celery_tasks.manage_redis[b76b1ee7-8f10-41c2-aa2a-9acc78446454] succeeded in 0.00165064300018s: None
+[2018-03-22 22:29:08,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:29:08,372: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[c3b1dba0-66b7-4a79-8ae9-6639c09971b7]  
+[2018-03-22 22:29:08,376: WARNING/ForkPoolWorker-5] []
+[2018-03-22 22:29:08,378: INFO/ForkPoolWorker-5] Task celery_module.celery_tasks.manage_redis[c3b1dba0-66b7-4a79-8ae9-6639c09971b7] succeeded in 0.00186079900232s: None
+[2018-03-22 22:29:13,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:29:13,370: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[41b0bfbf-7c47-422c-9417-5ccef6e1eefe]  
+[2018-03-22 22:29:13,372: WARNING/ForkPoolWorker-2] []
+[2018-03-22 22:29:13,373: INFO/ForkPoolWorker-2] Task celery_module.celery_tasks.manage_redis[41b0bfbf-7c47-422c-9417-5ccef6e1eefe] succeeded in 0.0013317189987s: None
+[2018-03-22 22:29:18,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:29:18,370: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[e1a13a6f-255a-4119-9fce-0640cf6b0eaf]  
+[2018-03-22 22:29:18,375: WARNING/ForkPoolWorker-6] []
+[2018-03-22 22:29:18,377: INFO/ForkPoolWorker-6] Task celery_module.celery_tasks.manage_redis[e1a13a6f-255a-4119-9fce-0640cf6b0eaf] succeeded in 0.00259277799705s: None
+[2018-03-22 22:29:23,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:29:23,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[7e4b0daf-ad67-472f-9508-93414656f4d1]  
+[2018-03-22 22:29:23,370: WARNING/ForkPoolWorker-3] []
+[2018-03-22 22:29:23,371: INFO/ForkPoolWorker-3] Task celery_module.celery_tasks.manage_redis[7e4b0daf-ad67-472f-9508-93414656f4d1] succeeded in 0.00150419700003s: None
+[2018-03-22 22:29:28,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:29:28,369: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[e0ece17a-04b6-4a66-8782-dcd43d10fa15]  
+[2018-03-22 22:29:28,371: WARNING/ForkPoolWorker-4] []
+[2018-03-22 22:29:28,372: INFO/ForkPoolWorker-4] Task celery_module.celery_tasks.manage_redis[e0ece17a-04b6-4a66-8782-dcd43d10fa15] succeeded in 0.00118767200183s: None
+[2018-03-22 22:29:33,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:29:33,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[cedafcab-748e-4c0e-a693-ccd0796e3e81]  
+[2018-03-22 22:29:33,371: WARNING/ForkPoolWorker-5] []
+[2018-03-22 22:29:33,372: INFO/ForkPoolWorker-5] Task celery_module.celery_tasks.manage_redis[cedafcab-748e-4c0e-a693-ccd0796e3e81] succeeded in 0.0014367310032s: None
+[2018-03-22 22:29:38,367: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:29:38,372: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[fc51ef14-f24c-4d5b-9489-4b57e059f633]  
+[2018-03-22 22:29:38,394: WARNING/ForkPoolWorker-2] []
+[2018-03-22 22:29:38,398: INFO/ForkPoolWorker-2] Task celery_module.celery_tasks.manage_redis[fc51ef14-f24c-4d5b-9489-4b57e059f633] succeeded in 0.00877441400007s: None
+[2018-03-22 22:29:43,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:29:43,369: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[aea8db90-9fdb-4c58-beb7-6e4e30176a02]  
+[2018-03-22 22:29:43,370: WARNING/ForkPoolWorker-6] []
+[2018-03-22 22:29:43,371: INFO/ForkPoolWorker-6] Task celery_module.celery_tasks.manage_redis[aea8db90-9fdb-4c58-beb7-6e4e30176a02] succeeded in 0.0015551280012s: None
+[2018-03-22 22:29:48,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:29:48,369: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[aa6e95ce-1dc5-4ce9-93cc-8a656b7261ac]  
+[2018-03-22 22:29:48,371: WARNING/ForkPoolWorker-3] []
+[2018-03-22 22:29:48,372: INFO/ForkPoolWorker-3] Task celery_module.celery_tasks.manage_redis[aa6e95ce-1dc5-4ce9-93cc-8a656b7261ac] succeeded in 0.00186958199993s: None
+[2018-03-22 22:29:53,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:29:53,369: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[3faf0ba6-f587-4bf2-8c5f-cabb76c098c8]  
+[2018-03-22 22:29:53,374: WARNING/ForkPoolWorker-4] []
+[2018-03-22 22:29:53,375: INFO/ForkPoolWorker-4] Task celery_module.celery_tasks.manage_redis[3faf0ba6-f587-4bf2-8c5f-cabb76c098c8] succeeded in 0.00150869999925s: None
+[2018-03-22 22:29:58,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:29:58,368: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[9e5ad471-b7ed-41e7-b7bc-e7a7c1dba4bd]  
+[2018-03-22 22:29:58,369: WARNING/ForkPoolWorker-5] []
+[2018-03-22 22:29:58,371: INFO/ForkPoolWorker-5] Task celery_module.celery_tasks.manage_redis[9e5ad471-b7ed-41e7-b7bc-e7a7c1dba4bd] succeeded in 0.00191839399849s: None
+[2018-03-22 22:30:03,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:30:03,369: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[0c97c5a3-18e7-4003-a4a6-4397de8586b1]  
+[2018-03-22 22:30:03,371: WARNING/ForkPoolWorker-2] []
+[2018-03-22 22:30:03,371: INFO/ForkPoolWorker-2] Task celery_module.celery_tasks.manage_redis[0c97c5a3-18e7-4003-a4a6-4397de8586b1] succeeded in 0.00140060299964s: None
+[2018-03-22 22:30:08,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:30:08,369: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[3a9231b7-175c-45e7-ac2b-d00fb48e5a76]  
+[2018-03-22 22:30:08,370: WARNING/ForkPoolWorker-6] []
+[2018-03-22 22:30:08,370: INFO/ForkPoolWorker-6] Task celery_module.celery_tasks.manage_redis[3a9231b7-175c-45e7-ac2b-d00fb48e5a76] succeeded in 0.000783142000728s: None
+[2018-03-22 22:30:13,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:30:13,370: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[678e9f76-c8b3-4d81-a10e-d7a4cd3ac47e]  
+[2018-03-22 22:30:13,372: WARNING/ForkPoolWorker-3] []
+[2018-03-22 22:30:13,373: INFO/ForkPoolWorker-3] Task celery_module.celery_tasks.manage_redis[678e9f76-c8b3-4d81-a10e-d7a4cd3ac47e] succeeded in 0.00130820399863s: None
+[2018-03-22 22:30:18,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:30:18,370: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[9021621e-f2b4-4f7e-9e54-062fce11a1d7]  
+[2018-03-22 22:30:18,372: WARNING/ForkPoolWorker-4] []
+[2018-03-22 22:30:18,372: INFO/ForkPoolWorker-4] Task celery_module.celery_tasks.manage_redis[9021621e-f2b4-4f7e-9e54-062fce11a1d7] succeeded in 0.00109447100112s: None
+[2018-03-22 22:30:23,366: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:30:23,370: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[9046b77a-407c-4830-8018-b33c46415a4d]  
+[2018-03-22 22:30:23,371: WARNING/ForkPoolWorker-5] []
+[2018-03-22 22:30:23,374: INFO/ForkPoolWorker-5] Task celery_module.celery_tasks.manage_redis[9046b77a-407c-4830-8018-b33c46415a4d] succeeded in 0.00268730199969s: None
+[2018-03-22 22:30:28,367: INFO/Beat] Scheduler: Sending due task redis_manage (celery_module.celery_tasks.manage_redis)
+[2018-03-22 22:30:28,371: INFO/MainProcess] Received task: celery_module.celery_tasks.manage_redis[1c13b407-9844-431e-adc1-04a0f7d0e458]  
+[2018-03-22 22:30:28,373: WARNING/ForkPoolWorker-2] []
+[2018-03-22 22:30:28,374: INFO/ForkPoolWorker-2] Task celery_module.celery_tasks.manage_redis[1c13b407-9844-431e-adc1-04a0f7d0e458] succeeded in 0.00119343200276s: None
