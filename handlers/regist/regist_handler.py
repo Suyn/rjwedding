@@ -2,7 +2,6 @@
 from handlers.base.base_handler import BaseHandler
 # from handlers.autherror.autherror_handler import AuthError
 from models.acount_user_modules.user_modules import User
-from utils.send_email.send_email_libs import send_qq_html_email
 from random import randint
 import json
 
@@ -27,17 +26,16 @@ class RegistHandler(BaseHandler):
         email = User.get_email(el)
         if 2 <= len(un) < 25 and 5 < len(el) < 30 and 5 < len(pd1) == len(pd2) < 64:
             if not username and not email and pd1 == pd2:
-                e_mail_list=[]
-                e_mail_list.append(el)
                 email_num_code = '{}{}{}{}{}{}'.format(randint(0, 9), randint(0, 9), randint(0, 9), randint(0, 9), randint(0, 9), randint(0, 9))
-                user_data = {'email': el, 'username': un, 'password': pd1, 'email_code': email_num_code}
+                print "邮箱验证码为%s" % email_num_code
+                user_data = {'email': el,
+                             'username': un,
+                             'password': pd1,
+                             'email_code': email_num_code,
+                             'IsSendEmail': False}
                 if self.conn.get("regist_email:%s" % el):
                     self.conn.delete("regist_email:%s" % el)
                 self.conn.setex("regist_email:%s" % el, json.dumps(user_data), 1800)
-                content = """
-            您好，<a href="http://wulilove.cn">WuLilove</a>提醒您，您的验证码为<span style="color: blue">{}</span>,有效时间为30分钟，若非您本人所为请忽略此邮件。
-            """.format(email_num_code)
-                send_qq_html_email("wedding@wulilove.cn", e_mail_list, "注册", content)
                 return {'status': True, 'msg': '验证码已发送至您的邮箱，请注意查收'}
                 # self._submit(un, el, pd1)
                 # return {'status': True, 'msg': '注册成功'}
