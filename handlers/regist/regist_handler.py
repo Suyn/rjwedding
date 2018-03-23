@@ -32,7 +32,7 @@ class RegistHandler(BaseHandler):
                              'username': un,
                              'password': pd1,
                              'email_code': email_num_code,
-                             'IsSendEmail': False}
+                             'IsSendEmail': 'no'}
                 if self.conn.get("regist_email:%s" % el):
                     self.conn.delete("regist_email:%s" % el)
                 self.conn.setex("regist_email:%s" % el, json.dumps(user_data), 1800)
